@@ -1,0 +1,24 @@
+2022-01-01 12:51:44.108  WARN 18992 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1d16h36m44s176ms694µs).
+2022-01-01 12:54:27.486  INFO 7676 --- [main] i.m.grandegita.GrandegitaApplication     : Starting GrandegitaApplication using Java 11.0.11 on LAPTOP-OGKERUP4 with PID 7676 (C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita\target\classes started by ml89 in C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita)
+2022-01-01 12:54:27.492 DEBUG 7676 --- [main] i.m.grandegita.GrandegitaApplication     : Running with Spring Boot v2.6.0, Spring v5.3.13
+2022-01-01 12:54:27.496  INFO 7676 --- [main] i.m.grandegita.GrandegitaApplication     : No active profile set, falling back to default profiles: default
+2022-01-01 12:54:29.306  INFO 7676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-01 12:54:29.512  INFO 7676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 182 ms. Found 3 JPA repository interfaces.
+2022-01-01 12:54:30.441  INFO 7676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2022-01-01 12:54:30.459  INFO 7676 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-01 12:54:30.460  INFO 7676 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-01 12:54:30.693  INFO 7676 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-01 12:54:30.693  INFO 7676 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3070 ms
+2022-01-01 12:54:31.205  INFO 7676 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-01 12:54:31.314  INFO 7676 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-01 12:54:31.656  INFO 7676 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-01 12:54:31.869  INFO 7676 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-01 12:54:32.265  INFO 7676 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-01 12:54:32.298  INFO 7676 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-01-01 12:54:33.633  INFO 7676 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-01 12:54:33.650  INFO 7676 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-01 12:54:34.448  WARN 7676 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-01 12:54:35.094  INFO 7676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2022-01-01 12:54:35.117  INFO 7676 --- [main] i.m.grandegita.GrandegitaApplication     : Started GrandegitaApplication in 8.66 seconds (JVM running for 11.191)
+2022-01-01 12:55:16.306  INFO 7676 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-01 12:55:16.628 DEBUG 7676 --- [http-nio-8083-exec-1] i.m.g.spot.controller.SpotController     :  1 
