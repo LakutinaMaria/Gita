@@ -13,8 +13,6 @@ import java.util.UUID;
 public class Explorer implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(nullable = false, updatable = false)
     private UUID id;
     private String firstName;
     private String lastName;

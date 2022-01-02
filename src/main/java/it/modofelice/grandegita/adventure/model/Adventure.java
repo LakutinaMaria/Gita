@@ -19,6 +19,7 @@ public class Adventure implements Serializable {
     private UUID id;
     private LocalDateTime dateTime;
     private LocalDateTime finishDateTime;
+    @Enumerated(EnumType.STRING)
     private AdventureStatus adventureStatus;
 
     @ManyToOne
