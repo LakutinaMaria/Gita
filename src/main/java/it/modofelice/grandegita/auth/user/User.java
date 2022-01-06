@@ -24,16 +24,9 @@ public class User implements UserDetails, Serializable {
     private String password;
     @Enumerated(EnumType.STRING)
     private UserRole userRole;
-    private Boolean locked;
-    private Boolean enabled;
+    private Boolean locked = false;
+    private Boolean enabled = false;
 
-//    public User(String email, String password, UserRole userRole, Boolean locked, Boolean enabled) {
-//        this.email = email;
-//        this.password = password;
-//        this.userRole = userRole;
-//        this.locked = locked;
-//        this.enabled = enabled;
-//    }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
