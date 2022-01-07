@@ -1,5 +1,6 @@
 package it.modofelice.grandegita.auth.registration;
 
+import it.modofelice.grandegita.auth.registration.emailsender.EmailSender;
 import it.modofelice.grandegita.auth.registration.token.ConfirmationToken;
 import it.modofelice.grandegita.auth.registration.token.ConfirmationTokenService;
 import it.modofelice.grandegita.auth.user.User;
@@ -21,6 +22,7 @@ public class RegistrationService {
     private final UserService service;
     private final EmailValidator emailValidator;
     private final ConfirmationTokenService confirmationTokenService;
+    private final EmailSender emailSender;
 
     public String register(RegistrationRequest registrationRequest) {
         log.debug("Start registration of new user with email {}", registrationRequest.getEmail());
@@ -37,8 +39,7 @@ public class RegistrationService {
                 .build();
         String link = service.singUpUser(newUser);
         log.debug("New user {} has been successfully created", newUser.getId());
-
-        //TODO : send email
+        emailSender.send(newUser.getEmail(), link);
         return link;
     }
     @Transactional
