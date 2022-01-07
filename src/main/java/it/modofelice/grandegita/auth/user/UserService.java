@@ -53,4 +53,11 @@ public class UserService implements UserDetailsService {
         confirmationTokenService.saveConfirmationToken(token);
         return token.getToken();
     }
+
+    public int enableUser(String email){
+        log.debug("Start enable user by email {}", email);
+        int result = userRepository.enableUser(email);
+        log.debug("User with email {} has been enabled: {}", email, result > 0 );
+        return result;
+    }
 }

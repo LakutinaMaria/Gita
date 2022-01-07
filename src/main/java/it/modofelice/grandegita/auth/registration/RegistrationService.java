@@ -1,11 +1,17 @@
 package it.modofelice.grandegita.auth.registration;
 
+import it.modofelice.grandegita.auth.registration.token.ConfirmationToken;
+import it.modofelice.grandegita.auth.registration.token.ConfirmationTokenService;
 import it.modofelice.grandegita.auth.user.User;
 import it.modofelice.grandegita.auth.user.UserRole;
 import it.modofelice.grandegita.auth.user.UserService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.time.LocalDateTime;
 
 @Service
 @AllArgsConstructor
@@ -14,6 +20,7 @@ public class RegistrationService {
 
     private final UserService service;
     private final EmailValidator emailValidator;
+    private final ConfirmationTokenService confirmationTokenService;
 
     public String register(RegistrationRequest registrationRequest) {
         log.debug("Start registration of new user with email {}", registrationRequest.getEmail());
@@ -33,6 +40,26 @@ public class RegistrationService {
 
         //TODO : send email
         return link;
+    }
+    @Transactional
+    public String confirmToken(String token){
+        log.debug("Request to find token {}", token);
+        ConfirmationToken confirmationToken = confirmationTokenService.getToken(token)
+                .orElseThrow(()-> new IllegalStateException("token not found"));
+
+        if(confirmationToken.getConfirmedAt() != null){
+            throw new IllegalStateException("token has been alredy confirmed");
+        }
+
+        LocalDateTime expiresAt = confirmationToken.getExpiresAt();
+        if(expiresAt.isBefore(LocalDateTime.now())){
+            throw new IllegalStateException("token has expired");
+        }
+        confirmationTokenService.setConfirmedAt(confirmationToken);
+
+        service.enableUser(confirmationToken.getUser().getEmail());
+        return "confirmed";
+
     }
 
 }
