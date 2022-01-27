@@ -37,7 +37,8 @@ public class RegistrationService {
                 .enabled(false)
                 .locked(false)
                 .build();
-        String link = service.singUpUser(newUser);
+        String token = service.singUpUser(newUser);
+        String link = "http://localhost:8083/api/v1/registration/confirm?token=" + token;
         log.debug("New user {} has been successfully created", newUser.getId());
         emailSender.send(newUser.getEmail(), link);
         return link;

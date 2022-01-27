@@ -1,16 +1,17 @@
 package it.modofelice.grandegita.explorer.service;
 
-import it.modofelice.grandegita.explorer.model.Explorer;
+import it.modofelice.grandegita.explorer.dto.ExplorerDto;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
+import org.springframework.data.domain.Pageable;
+import java.util.UUID;
 
 @Service
 public interface ExplorerService {
 
-    Explorer addExplorer(Explorer explorer);
-    List<Explorer> findAll();
-    Explorer findById(Long id);
-    Explorer updateExplorer(Explorer explorer);
-    void deleteExplorer(Long id);
+    ExplorerDto addExplorer(ExplorerDto explorer);
+    Page<ExplorerDto> findAll(Pageable pageable);
+    ExplorerDto findById(UUID id);
+    ExplorerDto updateExplorer(ExplorerDto explorer);
+    void deleteExplorer(UUID id);
 }

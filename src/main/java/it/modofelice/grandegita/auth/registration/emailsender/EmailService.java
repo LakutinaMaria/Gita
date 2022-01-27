@@ -1,8 +1,7 @@
 package it.modofelice.grandegita.auth.registration.emailsender;
 
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import net.bytebuddy.asm.Advice;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.scheduling.annotation.Async;
@@ -12,9 +11,9 @@ import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 @Slf4j
-public class EmailService implements EmailSender{
+public class EmailService implements EmailSender {
 
     private final JavaMailSender mailSender;
 
@@ -25,7 +24,7 @@ public class EmailService implements EmailSender{
             MimeMessage mimeMessage = mailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, "utf-8");
             String emailContent = buildEmail(link);
-            helper.setText(emailContent,true);
+            helper.setText(emailContent, true);
             helper.setTo(to);
             helper.setSubject("Confirm you email on GGita");
             helper.setFrom("ciao@ggita.com");

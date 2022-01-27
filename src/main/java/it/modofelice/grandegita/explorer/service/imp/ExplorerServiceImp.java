@@ -1,31 +1,57 @@
 package it.modofelice.grandegita.explorer.service.imp;
 
 import it.modofelice.grandegita.exception.DBObjectNotFoundException;
-import it.modofelice.grandegita.explorer.model.Explorer;
+import it.modofelice.grandegita.explorer.dto.ExplorerDto;
+import it.modofelice.grandegita.explorer.mapper.ExplorerDtoMapper;
 import it.modofelice.grandegita.explorer.repository.ExplorerRepo;
 import it.modofelice.grandegita.explorer.service.ExplorerService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import java.util.UUID;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
 @Slf4j
 public class ExplorerServiceImp  implements ExplorerService {
     private final ExplorerRepo explorerRepo;
+    private final ExplorerDtoMapper explorerDtoMapper;
 
-    public Explorer addExplorer(Explorer explorer){ return explorerRepo.save(explorer);}
-
-    public List<Explorer> findAll(){ return explorerRepo.findAll();}
-
-    public Explorer findById(Long id) {
-        return explorerRepo.findExplorerById(id).orElseThrow(
-                ()-> new DBObjectNotFoundException("Explorer " + id + " was not found"));
+    public ExplorerDto addExplorer(ExplorerDto explorer){
+        var entity = explorerDtoMapper.toEntity(explorer);
+        entity = explorerRepo.save(entity);
+        var dto = explorerDtoMapper.toDto(entity);
+        return dto;
     }
 
-    public Explorer updateExplorer(Explorer explorer) {return this.explorerRepo.save(explorer);}
+    public Page<ExplorerDto> findAll(Pageable page){
+        var listExplorerPage = explorerRepo.findAll(page);
+        var listExplorerDto = listExplorerPage.stream()
+                .map(explorerDtoMapper::toDto)
+                .collect(Collectors.toList());
+        return new PageImpl<>(listExplorerDto, listExplorerPage.getPageable(), listExplorerPage.getTotalElements());
+    }
 
-    public void deleteExplorer(Long id){this.explorerRepo.deleteExplorerById(id);}
+    public ExplorerDto findById(UUID id) {
+        var entity = explorerRepo.findExplorerById(id).orElseThrow(
+                ()-> new DBObjectNotFoundException("Explorer " + id + " was not found"));
+        var dto = explorerDtoMapper.toDto(entity);
+        return dto;
+    }
+
+    public ExplorerDto updateExplorer(ExplorerDto explorer) {
+        var entity = explorerDtoMapper.toEntity(explorer);
+        entity = explorerRepo.save(entity);
+        var dto = explorerDtoMapper.toDto(entity);
+        return dto;
+    }
+
+    public void deleteExplorer(UUID id){
+        this.explorerRepo.deleteExplorerById(id);
+    }
 }

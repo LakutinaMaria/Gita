@@ -4,10 +4,11 @@ import it.modofelice.grandegita.explorer.model.Explorer;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
+import java.util.UUID;
 
-public interface ExplorerRepo extends JpaRepository<Explorer, Long> {
+public interface ExplorerRepo extends JpaRepository<Explorer, UUID> {
 
-    void deleteExplorerById(Long id);
+    void deleteExplorerById(UUID id);
 
-    Optional<Explorer> findExplorerById(Long id);
+    Optional<Explorer> findExplorerById(UUID id);
 }
