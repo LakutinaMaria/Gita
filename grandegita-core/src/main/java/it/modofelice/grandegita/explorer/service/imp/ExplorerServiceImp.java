@@ -25,8 +25,7 @@ public class ExplorerServiceImp  implements ExplorerService {
     public ExplorerDto addExplorer(ExplorerDto explorer){
         var entity = explorerDtoMapper.toEntity(explorer);
         entity = explorerRepo.save(entity);
-        var dto = explorerDtoMapper.toDto(entity);
-        return dto;
+        return explorerDtoMapper.toDto(entity);
     }
 
     public Page<ExplorerDto> findAll(Pageable page){
@@ -40,15 +39,13 @@ public class ExplorerServiceImp  implements ExplorerService {
     public ExplorerDto findById(UUID id) {
         var entity = explorerRepo.findExplorerById(id).orElseThrow(
                 ()-> new DBObjectNotFoundException("Explorer " + id + " was not found"));
-        var dto = explorerDtoMapper.toDto(entity);
-        return dto;
+        return explorerDtoMapper.toDto(entity);
     }
 
     public ExplorerDto updateExplorer(ExplorerDto explorer) {
         var entity = explorerDtoMapper.toEntity(explorer);
         entity = explorerRepo.save(entity);
-        var dto = explorerDtoMapper.toDto(entity);
-        return dto;
+        return explorerDtoMapper.toDto(entity);
     }
 
     public void deleteExplorer(UUID id){
