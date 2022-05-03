@@ -1,390 +1,221 @@
-2022-01-02 14:23:33.192  WARN 7676 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13h49m11s630ms560µs400ns).
-2022-01-02 15:47:30.701  WARN 7676 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=39m57s760ms651µs600ns).
-2022-01-02 16:05:55.366  WARN 7676 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s413ms135µs600ns).
-2022-01-02 16:06:41.026  INFO 1540 --- [main] i.m.grandegita.GrandegitaApplication     : Starting GrandegitaApplication using Java 11.0.11 on LAPTOP-OGKERUP4 with PID 1540 (C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita\target\classes started by ml89 in C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita)
-2022-01-02 16:06:41.032 DEBUG 1540 --- [main] i.m.grandegita.GrandegitaApplication     : Running with Spring Boot v2.6.0, Spring v5.3.13
-2022-01-02 16:06:41.036  INFO 1540 --- [main] i.m.grandegita.GrandegitaApplication     : No active profile set, falling back to default profiles: default
-2022-01-02 16:06:42.782  INFO 1540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-01-02 16:06:42.965  INFO 1540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 164 ms. Found 3 JPA repository interfaces.
-2022-01-02 16:06:43.879  INFO 1540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
-2022-01-02 16:06:43.899  INFO 1540 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-01-02 16:06:43.900  INFO 1540 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
-2022-01-02 16:06:44.139  INFO 1540 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-01-02 16:06:44.140  INFO 1540 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2960 ms
-2022-01-02 16:06:44.457  INFO 1540 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-01-02 16:06:44.540  INFO 1540 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
-2022-01-02 16:06:44.790  INFO 1540 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-01-02 16:06:44.993  INFO 1540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-01-02 16:06:45.313  INFO 1540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-01-02 16:06:45.338  INFO 1540 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-01-02 16:06:47.318  INFO 1540 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-01-02 16:06:47.360  INFO 1540 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-01-02 16:06:48.844  WARN 1540 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-01-02 16:06:49.561  INFO 1540 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+2022-04-26 17:48:07.725  INFO 9824 --- [main] i.m.grandegita.GrandegitaApplication     : Starting GrandegitaApplication using Java 11.0.11 on LAPTOP-OGKERUP4 with PID 9824 (C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita\grandegita-core\target\classes started by ml89 in C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita)
+2022-04-26 17:48:07.771 DEBUG 9824 --- [main] i.m.grandegita.GrandegitaApplication     : Running with Spring Boot v2.6.3, Spring v5.3.16
+2022-04-26 17:48:07.772  INFO 9824 --- [main] i.m.grandegita.GrandegitaApplication     : No active profile set, falling back to default profiles: default
+2022-04-26 17:48:09.722  INFO 9824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-26 17:48:09.939  INFO 9824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 199 ms. Found 5 JPA repository interfaces.
+2022-04-26 17:48:10.817  INFO 9824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2022-04-26 17:48:10.835  INFO 9824 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-26 17:48:10.836  INFO 9824 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-04-26 17:48:11.069  INFO 9824 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-26 17:48:11.070  INFO 9824 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3137 ms
+2022-04-26 17:48:11.368  INFO 9824 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-26 17:48:11.478  INFO 9824 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-04-26 17:48:11.768  INFO 9824 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-26 17:48:11.967  INFO 9824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-26 17:48:12.338  INFO 9824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-26 17:48:12.364  INFO 9824 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-04-26 17:48:13.760  INFO 9824 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-26 17:48:13.778  INFO 9824 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-26 17:48:14.551  WARN 9824 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-26 17:48:14.903  INFO 9824 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-26 17:48:15.507  INFO 9824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2022-04-26 17:48:15.523  INFO 9824 --- [main] i.m.grandegita.GrandegitaApplication     : Started GrandegitaApplication in 9.256 seconds (JVM running for 13.002)
+2022-04-26 18:38:10.646  INFO 15888 --- [main] i.m.grandegita.GrandegitaApplication     : Starting GrandegitaApplication using Java 11.0.11 on LAPTOP-OGKERUP4 with PID 15888 (C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita\grandegita-core\target\classes started by ml89 in C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita)
+2022-04-26 18:38:10.666 DEBUG 15888 --- [main] i.m.grandegita.GrandegitaApplication     : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-04-26 18:38:10.687  INFO 15888 --- [main] i.m.grandegita.GrandegitaApplication     : No active profile set, falling back to default profiles: default
+2022-04-26 18:38:12.260  INFO 15888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-26 18:38:12.391  INFO 15888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114 ms. Found 3 JPA repository interfaces.
+2022-04-26 18:38:13.184  INFO 15888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2022-04-26 18:38:13.200  INFO 15888 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-26 18:38:13.201  INFO 15888 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-04-26 18:38:13.396  INFO 15888 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-26 18:38:13.397  INFO 15888 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2574 ms
+2022-04-26 18:38:13.679  INFO 15888 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-26 18:38:13.774  INFO 15888 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-04-26 18:38:14.047  INFO 15888 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-26 18:38:14.194  INFO 15888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-26 18:38:14.448  INFO 15888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-26 18:38:14.476  INFO 15888 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-04-26 18:38:15.611  INFO 15888 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-26 18:38:15.627  INFO 15888 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-26 18:38:16.282  WARN 15888 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-26 18:38:16.712  INFO 15888 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 9639328e-ee32-4761-91b9-2ee497306076
+Using generated security password: 7fa98b94-365c-458d-85b8-e1346eb171d8
 
-2022-01-02 16:06:49.834  INFO 1540 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7fcbc336, org.springframework.security.web.context.SecurityContextPersistenceFilter@dbcf7c3, org.springframework.security.web.header.HeaderWriterFilter@70eb94d7, org.springframework.security.web.csrf.CsrfFilter@69abeb14, org.springframework.security.web.authentication.logout.LogoutFilter@6a0ee80, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1c681761, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@f575d2b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1fe7fa16, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6be2b567, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63243c8f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ea4e762, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@61503d00, org.springframework.security.web.session.SessionManagementFilter@7e43b342, org.springframework.security.web.access.ExceptionTranslationFilter@a1a72d4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@f0381f0]
-2022-01-02 16:06:50.000  INFO 1540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
-2022-01-02 16:06:50.038  INFO 1540 --- [main] i.m.grandegita.GrandegitaApplication     : Started GrandegitaApplication in 10.068 seconds (JVM running for 13.372)
-2022-01-02 16:07:57.197  INFO 20808 --- [main] i.m.grandegita.GrandegitaApplication     : Starting GrandegitaApplication using Java 11.0.11 on LAPTOP-OGKERUP4 with PID 20808 (C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita\target\classes started by ml89 in C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita)
-2022-01-02 16:07:57.203 DEBUG 20808 --- [main] i.m.grandegita.GrandegitaApplication     : Running with Spring Boot v2.6.0, Spring v5.3.13
-2022-01-02 16:07:57.208  INFO 20808 --- [main] i.m.grandegita.GrandegitaApplication     : No active profile set, falling back to default profiles: default
-2022-01-02 16:07:58.701  INFO 20808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-01-02 16:07:58.832  INFO 20808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117 ms. Found 3 JPA repository interfaces.
-2022-01-02 16:07:59.629  INFO 20808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
-2022-01-02 16:07:59.643  INFO 20808 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-01-02 16:07:59.644  INFO 20808 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
-2022-01-02 16:07:59.845  INFO 20808 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-01-02 16:07:59.845  INFO 20808 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2475 ms
-2022-01-02 16:08:00.239  INFO 20808 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-01-02 16:08:00.318  INFO 20808 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
-2022-01-02 16:08:00.509  INFO 20808 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-01-02 16:08:00.636  INFO 20808 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-01-02 16:08:00.938  INFO 20808 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-01-02 16:08:00.960  INFO 20808 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-01-02 16:08:02.085  INFO 20808 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-01-02 16:08:02.097  INFO 20808 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-01-02 16:08:02.690  WARN 20808 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-01-02 16:08:03.163  INFO 20808 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+2022-04-26 18:38:16.870  INFO 15888 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-26 18:38:16.983  INFO 15888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2022-04-26 18:38:17.003  INFO 15888 --- [main] i.m.grandegita.GrandegitaApplication     : Started GrandegitaApplication in 7.861 seconds (JVM running for 10.991)
+2022-04-26 18:40:33.929  INFO 15456 --- [main] i.m.grandegita.GrandegitaApplication     : Starting GrandegitaApplication using Java 11.0.11 on LAPTOP-OGKERUP4 with PID 15456 (C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita\grandegita-core\target\classes started by ml89 in C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita)
+2022-04-26 18:40:33.939 DEBUG 15456 --- [main] i.m.grandegita.GrandegitaApplication     : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-04-26 18:40:33.941  INFO 15456 --- [main] i.m.grandegita.GrandegitaApplication     : No active profile set, falling back to default profiles: default
+2022-04-26 18:40:35.342  INFO 15456 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-26 18:40:35.465  INFO 15456 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108 ms. Found 3 JPA repository interfaces.
+2022-04-26 18:40:36.155  INFO 15456 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2022-04-26 18:40:36.168  INFO 15456 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-26 18:40:36.169  INFO 15456 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-04-26 18:40:36.346  INFO 15456 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-26 18:40:36.346  INFO 15456 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2208 ms
+2022-04-26 18:40:36.616  INFO 15456 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-26 18:40:36.669  INFO 15456 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-04-26 18:40:36.841  INFO 15456 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-26 18:40:36.976  INFO 15456 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-26 18:40:37.232  INFO 15456 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-26 18:40:37.252  INFO 15456 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-04-26 18:40:38.205  INFO 15456 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-26 18:40:38.221  INFO 15456 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-26 18:40:38.794  WARN 15456 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-26 18:40:39.211  INFO 15456 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 1a9564a7-2c77-4d28-8986-a3e30a5c0f53
+Using generated security password: 954e0543-f45a-44d3-a3af-61afa38f5d7a
 
-2022-01-02 16:08:03.344  INFO 20808 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f36e806, org.springframework.security.web.context.SecurityContextPersistenceFilter@c7c07ff, org.springframework.security.web.header.HeaderWriterFilter@2f498f21, org.springframework.security.web.csrf.CsrfFilter@2e1e7bc6, org.springframework.security.web.authentication.logout.LogoutFilter@1be4a7e3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@71e409f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@47994b51, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4088702d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2245ccaa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a302f30, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1860b107, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c24c40a, org.springframework.security.web.session.SessionManagementFilter@50caeb4b, org.springframework.security.web.access.ExceptionTranslationFilter@78f4d15d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@de40aa1]
-2022-01-02 16:08:03.501  INFO 20808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
-2022-01-02 16:08:03.534  INFO 20808 --- [main] i.m.grandegita.GrandegitaApplication     : Started GrandegitaApplication in 7.667 seconds (JVM running for 10.302)
-2022-01-02 16:13:45.956  INFO 19468 --- [main] i.m.grandegita.GrandegitaApplication     : Starting GrandegitaApplication using Java 11.0.11 on LAPTOP-OGKERUP4 with PID 19468 (C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita\target\classes started by ml89 in C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita)
-2022-01-02 16:13:45.973 DEBUG 19468 --- [main] i.m.grandegita.GrandegitaApplication     : Running with Spring Boot v2.6.0, Spring v5.3.13
-2022-01-02 16:13:45.973  INFO 19468 --- [main] i.m.grandegita.GrandegitaApplication     : No active profile set, falling back to default profiles: default
-2022-01-02 16:13:47.806  INFO 19468 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-01-02 16:13:48.041  INFO 19468 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 195 ms. Found 3 JPA repository interfaces.
-2022-01-02 16:13:49.291  INFO 19468 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
-2022-01-02 16:13:49.306  INFO 19468 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-01-02 16:13:49.322  INFO 19468 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
-2022-01-02 16:13:49.603  INFO 19468 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-01-02 16:13:49.603  INFO 19468 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3551 ms
-2022-01-02 16:13:49.963  INFO 19468 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-01-02 16:13:50.041  INFO 19468 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
-2022-01-02 16:13:50.260  INFO 19468 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-01-02 16:13:50.385  INFO 19468 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-01-02 16:13:50.650  INFO 19468 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-01-02 16:13:50.666  INFO 19468 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-01-02 16:13:51.572  INFO 19468 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-01-02 16:13:51.588  INFO 19468 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-01-02 16:13:52.103  WARN 19468 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-01-02 16:13:52.517  INFO 19468 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+2022-04-26 18:40:39.364  INFO 15456 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-26 18:40:39.502  INFO 15456 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2022-04-26 18:40:39.523  INFO 15456 --- [main] i.m.grandegita.GrandegitaApplication     : Started GrandegitaApplication in 7.146 seconds (JVM running for 9.718)
+2022-04-26 18:41:57.926  INFO 15456 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-26 18:41:59.231  WARN 15456 --- [http-nio-8083-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [1,216] milliseconds.
+2022-04-26 18:53:20.307  INFO 16852 --- [main] i.m.grandegita.GrandegitaApplication     : Starting GrandegitaApplication using Java 11.0.11 on LAPTOP-OGKERUP4 with PID 16852 (C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita\grandegita-core\target\classes started by ml89 in C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita)
+2022-04-26 18:53:20.311 DEBUG 16852 --- [main] i.m.grandegita.GrandegitaApplication     : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-04-26 18:53:20.312  INFO 16852 --- [main] i.m.grandegita.GrandegitaApplication     : No active profile set, falling back to default profiles: default
+2022-04-26 18:53:21.852  INFO 16852 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-26 18:53:22.011  INFO 16852 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 136 ms. Found 3 JPA repository interfaces.
+2022-04-26 18:53:22.709  INFO 16852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2022-04-26 18:53:22.724  INFO 16852 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-26 18:53:22.724  INFO 16852 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-04-26 18:53:22.915  INFO 16852 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-26 18:53:22.916  INFO 16852 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2469 ms
+2022-04-26 18:53:23.204  INFO 16852 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-26 18:53:23.282  INFO 16852 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-04-26 18:53:23.513  INFO 16852 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-26 18:53:23.662  INFO 16852 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-26 18:53:23.936  INFO 16852 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-26 18:53:23.964  INFO 16852 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-04-26 18:53:25.135  INFO 16852 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-26 18:53:25.147  INFO 16852 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-26 18:53:25.810  WARN 16852 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-26 18:53:26.265  INFO 16852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2022-04-26 18:53:26.285  INFO 16852 --- [main] i.m.grandegita.GrandegitaApplication     : Started GrandegitaApplication in 7.447 seconds (JVM running for 10.088)
+2022-04-26 18:53:36.109  INFO 16852 --- [http-nio-8083-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-26 18:53:36.185 DEBUG 16852 --- [http-nio-8083-exec-2] i.m.g.a.controller.AdventureController   : Request for a list of adventures has been accepted
+2022-04-26 18:53:36.607 DEBUG 16852 --- [http-nio-8083-exec-2] i.m.g.a.facade.imp.AdventureFacadeImp    : Received a list of adventures: 0
+2022-04-26 18:53:36.609 DEBUG 16852 --- [http-nio-8083-exec-2] i.m.g.a.facade.imp.AdventureFacadeImp    : List of adventures have been converted into list of dtos: 0
+2022-04-26 18:53:36.609 DEBUG 16852 --- [http-nio-8083-exec-2] i.m.g.a.controller.AdventureController   : List of adventures of 0 elements has been received
+2022-04-26 22:04:49.763  WARN 16852 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h25s514ms196µs500ns).
+2022-04-26 22:22:45.812  WARN 16852 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m883ms954µs399ns).
+2022-04-26 23:21:08.223  INFO 19968 --- [main] i.m.grandegita.GrandegitaApplication     : Starting GrandegitaApplication using Java 11.0.11 on LAPTOP-OGKERUP4 with PID 19968 (C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita\grandegita-core\target\classes started by ml89 in C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita)
+2022-04-26 23:21:08.228 DEBUG 19968 --- [main] i.m.grandegita.GrandegitaApplication     : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-04-26 23:21:08.229  INFO 19968 --- [main] i.m.grandegita.GrandegitaApplication     : No active profile set, falling back to default profiles: default
+2022-04-26 23:21:09.965  INFO 19968 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-26 23:21:10.123  INFO 19968 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 144 ms. Found 3 JPA repository interfaces.
+2022-04-26 23:21:10.907  INFO 19968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2022-04-26 23:21:10.922  INFO 19968 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-26 23:21:10.923  INFO 19968 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-04-26 23:21:11.115  INFO 19968 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-26 23:21:11.116  INFO 19968 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2730 ms
+2022-04-26 23:21:11.414  INFO 19968 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-26 23:21:11.497  INFO 19968 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-04-26 23:21:11.775  INFO 19968 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-26 23:21:11.940  INFO 19968 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-26 23:21:12.293  INFO 19968 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-26 23:21:12.319  INFO 19968 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-04-26 23:21:13.426  INFO 19968 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-26 23:21:13.437  INFO 19968 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-26 23:21:14.059  WARN 19968 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-26 23:21:14.473  INFO 19968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2022-04-26 23:21:14.490  INFO 19968 --- [main] i.m.grandegita.GrandegitaApplication     : Started GrandegitaApplication in 8.096 seconds (JVM running for 11.222)
+2022-04-26 23:28:27.536  INFO 19816 --- [main] i.m.grandegita.GrandegitaApplication     : Starting GrandegitaApplication using Java 11.0.11 on LAPTOP-OGKERUP4 with PID 19816 (C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita\grandegita-core\target\classes started by ml89 in C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita)
+2022-04-26 23:28:27.549 DEBUG 19816 --- [main] i.m.grandegita.GrandegitaApplication     : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-04-26 23:28:27.549  INFO 19816 --- [main] i.m.grandegita.GrandegitaApplication     : No active profile set, falling back to default profiles: default
+2022-04-26 23:28:28.859  INFO 19816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-26 23:28:28.990  INFO 19816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118 ms. Found 3 JPA repository interfaces.
+2022-04-26 23:28:29.731  INFO 19816 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2022-04-26 23:28:29.745  INFO 19816 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-26 23:28:29.746  INFO 19816 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-04-26 23:28:29.936  INFO 19816 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-26 23:28:29.938  INFO 19816 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2312 ms
+2022-04-26 23:28:30.527  WARN 19816 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [liquibase.integration.spring.SpringLiquibase]: Factory method 'liquibase' threw exception; nested exception is java.lang.NoSuchMethodError: liquibase.integration.spring.SpringLiquibase.setClearCheckSums(Z)V
+2022-04-26 23:28:30.531  INFO 19816 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-04-26 23:28:30.551  INFO 19816 --- [main] ConditionEvaluationReportLoggingListener : 
 
-Using generated security password: 1269c9b1-a8ba-49fb-afab-dab595f15de1
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-26 23:28:30.579 ERROR 19816 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
 
-2022-01-02 16:13:52.657  INFO 19468 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d202dc4, org.springframework.security.web.context.SecurityContextPersistenceFilter@319058ce, org.springframework.security.web.header.HeaderWriterFilter@1f365a26, org.springframework.security.web.csrf.CsrfFilter@5dc120ab, org.springframework.security.web.authentication.logout.LogoutFilter@19f1f330, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1bb51492, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@90394d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@71e409f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@57f89680, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71cc0e35, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b6c740b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14c18a6a, org.springframework.security.web.session.SessionManagementFilter@2e2cd42c, org.springframework.security.web.access.ExceptionTranslationFilter@185bf6e0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@63551c66]
-2022-01-02 16:13:52.751  INFO 19468 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
-2022-01-02 16:13:52.782  INFO 19468 --- [main] i.m.grandegita.GrandegitaApplication     : Started GrandegitaApplication in 7.742 seconds (JVM running for 13.701)
-2022-01-02 16:16:34.931  INFO 5976 --- [main] i.m.grandegita.GrandegitaApplication     : Starting GrandegitaApplication using Java 11.0.11 on LAPTOP-OGKERUP4 with PID 5976 (C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita\target\classes started by ml89 in C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita)
-2022-01-02 16:16:34.931 DEBUG 5976 --- [main] i.m.grandegita.GrandegitaApplication     : Running with Spring Boot v2.6.0, Spring v5.3.13
-2022-01-02 16:16:34.931  INFO 5976 --- [main] i.m.grandegita.GrandegitaApplication     : No active profile set, falling back to default profiles: default
-2022-01-02 16:16:36.112  INFO 5976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-01-02 16:16:36.221  INFO 5976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 104 ms. Found 3 JPA repository interfaces.
-2022-01-02 16:16:36.909  INFO 5976 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
-2022-01-02 16:16:36.925  INFO 5976 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-01-02 16:16:36.925  INFO 5976 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
-2022-01-02 16:16:37.096  INFO 5976 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-01-02 16:16:37.096  INFO 5976 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2086 ms
-2022-01-02 16:16:37.346  INFO 5976 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-01-02 16:16:37.409  INFO 5976 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
-2022-01-02 16:16:37.565  INFO 5976 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-01-02 16:16:37.675  INFO 5976 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-01-02 16:16:37.900  INFO 5976 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-01-02 16:16:37.932  INFO 5976 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-01-02 16:16:38.807  INFO 5976 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-01-02 16:16:38.822  INFO 5976 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-01-02 16:16:39.369  WARN 5976 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-01-02 16:16:39.775  INFO 5976 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+***************************
+APPLICATION FAILED TO START
+***************************
 
-Using generated security password: 2af0c14b-a314-4b02-8c18-81eab88e767c
+Description:
 
-2022-01-02 16:16:39.916  INFO 5976 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@19f1f330, org.springframework.security.web.context.SecurityContextPersistenceFilter@7c9512c6, org.springframework.security.web.header.HeaderWriterFilter@33a8f553, org.springframework.security.web.csrf.CsrfFilter@7d7a8d23, org.springframework.security.web.authentication.logout.LogoutFilter@38197e82, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@d271d6c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@65021bb4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@143fe09c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@19f99aaf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b79df53, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8ee1404, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@41463c56, org.springframework.security.web.session.SessionManagementFilter@7204d98f, org.springframework.security.web.access.ExceptionTranslationFilter@5a9baba8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2f498f21]
-2022-01-02 16:16:40.010  INFO 5976 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
-2022-01-02 16:16:40.041  INFO 5976 --- [main] i.m.grandegita.GrandegitaApplication     : Started GrandegitaApplication in 6.196 seconds (JVM running for 8.301)
-2022-01-02 16:18:39.129  INFO 10020 --- [main] i.m.grandegita.GrandegitaApplication     : Starting GrandegitaApplication using Java 11.0.11 on LAPTOP-OGKERUP4 with PID 10020 (C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita\target\classes started by ml89 in C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita)
-2022-01-02 16:18:39.145 DEBUG 10020 --- [main] i.m.grandegita.GrandegitaApplication     : Running with Spring Boot v2.6.0, Spring v5.3.13
-2022-01-02 16:18:39.145  INFO 10020 --- [main] i.m.grandegita.GrandegitaApplication     : No active profile set, falling back to default profiles: default
-2022-01-02 16:18:40.421  INFO 10020 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-01-02 16:18:40.546  INFO 10020 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 96 ms. Found 3 JPA repository interfaces.
-2022-01-02 16:18:41.187  INFO 10020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
-2022-01-02 16:18:41.202  INFO 10020 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-01-02 16:18:41.202  INFO 10020 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
-2022-01-02 16:18:41.390  INFO 10020 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-01-02 16:18:41.390  INFO 10020 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2183 ms
-2022-01-02 16:18:41.671  INFO 10020 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-01-02 16:18:41.733  INFO 10020 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
-2022-01-02 16:18:41.874  INFO 10020 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-01-02 16:18:41.983  INFO 10020 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-01-02 16:18:42.202  INFO 10020 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-01-02 16:18:42.233  INFO 10020 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-01-02 16:18:43.010  INFO 10020 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-01-02 16:18:43.026  INFO 10020 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-01-02 16:18:43.620  WARN 10020 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-01-02 16:18:44.010  INFO 10020 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
 
-Using generated security password: 77bcc865-f01f-402c-b113-547a8c0a2706
+    org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration$LiquibaseConfiguration.liquibase(LiquibaseAutoConfiguration.java:94)
 
-2022-01-02 16:18:44.198  INFO 10020 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b32b678, org.springframework.security.web.context.SecurityContextPersistenceFilter@3ec211cc, org.springframework.security.web.header.HeaderWriterFilter@4f65af91, org.springframework.security.web.csrf.CsrfFilter@59c38af5, org.springframework.security.web.authentication.logout.LogoutFilter@8f374de, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4af44f2a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2b4954a4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1b6683c4, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@161c9468, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1322b542, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6a97517, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69abeb14, org.springframework.security.web.session.SessionManagementFilter@8ee1404, org.springframework.security.web.access.ExceptionTranslationFilter@61ca5134, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d271d6c]
-2022-01-02 16:18:44.291  INFO 10020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
-2022-01-02 16:18:44.307  INFO 10020 --- [main] i.m.grandegita.GrandegitaApplication     : Started GrandegitaApplication in 6.152 seconds (JVM running for 8.375)
-2022-01-02 16:20:20.823  INFO 17040 --- [main] i.m.grandegita.GrandegitaApplication     : Starting GrandegitaApplication using Java 11.0.11 on LAPTOP-OGKERUP4 with PID 17040 (C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita\target\classes started by ml89 in C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita)
-2022-01-02 16:20:20.839 DEBUG 17040 --- [main] i.m.grandegita.GrandegitaApplication     : Running with Spring Boot v2.6.0, Spring v5.3.13
-2022-01-02 16:20:20.839  INFO 17040 --- [main] i.m.grandegita.GrandegitaApplication     : No active profile set, falling back to default profiles: default
-2022-01-02 16:20:22.260  INFO 17040 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-01-02 16:20:22.385  INFO 17040 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 3 JPA repository interfaces.
-2022-01-02 16:20:23.042  INFO 17040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
-2022-01-02 16:20:23.057  INFO 17040 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-01-02 16:20:23.057  INFO 17040 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
-2022-01-02 16:20:23.221  INFO 17040 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-01-02 16:20:23.221  INFO 17040 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2289 ms
-2022-01-02 16:20:23.471  INFO 17040 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-01-02 16:20:23.534  INFO 17040 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
-2022-01-02 16:20:23.675  INFO 17040 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-01-02 16:20:23.800  INFO 17040 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-01-02 16:20:24.018  INFO 17040 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-01-02 16:20:24.034  INFO 17040 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-01-02 16:20:24.893  INFO 17040 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-01-02 16:20:24.909  INFO 17040 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-01-02 16:20:25.440  WARN 17040 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-01-02 16:20:25.846  INFO 17040 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+The following method did not exist:
 
-Using generated security password: 75ed3bed-00cd-42bd-b745-33d4317cb957
+    liquibase.integration.spring.SpringLiquibase.setClearCheckSums(Z)V
 
-2022-01-02 16:20:25.987  INFO 17040 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1be4a7e3, org.springframework.security.web.context.SecurityContextPersistenceFilter@5cba474f, org.springframework.security.web.header.HeaderWriterFilter@284b487f, org.springframework.security.web.csrf.CsrfFilter@6e12f38c, org.springframework.security.web.authentication.logout.LogoutFilter@363ba634, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@143fe09c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3361d286, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@632b96b8, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1adf387e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b4954a4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f2f92f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@544e6b, org.springframework.security.web.session.SessionManagementFilter@630c3af3, org.springframework.security.web.access.ExceptionTranslationFilter@3ec211cc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ffcdc9b]
-2022-01-02 16:20:26.081  INFO 17040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
-2022-01-02 16:20:26.112  INFO 17040 --- [main] i.m.grandegita.GrandegitaApplication     : Started GrandegitaApplication in 6.28 seconds (JVM running for 8.508)
-2022-01-02 16:26:13.422  INFO 19508 --- [main] i.m.grandegita.GrandegitaApplication     : Starting GrandegitaApplication using Java 11.0.11 on LAPTOP-OGKERUP4 with PID 19508 (C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita\target\classes started by ml89 in C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita)
-2022-01-02 16:26:13.437 DEBUG 19508 --- [main] i.m.grandegita.GrandegitaApplication     : Running with Spring Boot v2.6.0, Spring v5.3.13
-2022-01-02 16:26:13.437  INFO 19508 --- [main] i.m.grandegita.GrandegitaApplication     : No active profile set, falling back to default profiles: default
-2022-01-02 16:26:15.848  INFO 19508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-01-02 16:26:16.005  INFO 19508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 130 ms. Found 3 JPA repository interfaces.
-2022-01-02 16:26:16.971  INFO 19508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
-2022-01-02 16:26:16.981  INFO 19508 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-01-02 16:26:16.981  INFO 19508 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
-2022-01-02 16:26:17.289  INFO 19508 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-01-02 16:26:17.289  INFO 19508 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3742 ms
-2022-01-02 16:26:17.823  INFO 19508 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-01-02 16:26:17.917  INFO 19508 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
-2022-01-02 16:26:18.229  INFO 19508 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-01-02 16:26:18.417  INFO 19508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-01-02 16:26:18.729  INFO 19508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-01-02 16:26:18.745  INFO 19508 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-01-02 16:26:19.807  INFO 19508 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-01-02 16:26:19.823  INFO 19508 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-01-02 16:26:20.416  WARN 19508 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-01-02 16:26:20.870  INFO 19508 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+The calling method's class, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration$LiquibaseConfiguration, was loaded from the following location:
 
-Using generated security password: 765451ef-f602-44e4-b9d6-80681881f8ff
+    jar:file:/C:/Users/ml89/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.6.3/spring-boot-autoconfigure-2.6.3.jar!/org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class
 
-2022-01-02 16:26:21.010  INFO 19508 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@143fe09c, org.springframework.security.web.context.SecurityContextPersistenceFilter@4f65af91, org.springframework.security.web.header.HeaderWriterFilter@61ca5134, org.springframework.security.web.csrf.CsrfFilter@3acc65f0, org.springframework.security.web.authentication.logout.LogoutFilter@5516ee5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@a302f30, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@630c3af3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@41463c56, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5020e5ab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8ee1404, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c3924fd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@161c9468, org.springframework.security.web.session.SessionManagementFilter@8636cf4, org.springframework.security.web.access.ExceptionTranslationFilter@72240290, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@90394d]
-2022-01-02 16:26:21.088  INFO 19508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
-2022-01-02 16:26:21.104  INFO 19508 --- [main] i.m.grandegita.GrandegitaApplication     : Started GrandegitaApplication in 9.196 seconds (JVM running for 13.046)
-2022-01-02 16:30:01.584  INFO 11088 --- [main] i.m.grandegita.GrandegitaApplication     : Starting GrandegitaApplication using Java 11.0.11 on LAPTOP-OGKERUP4 with PID 11088 (C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita\target\classes started by ml89 in C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita)
-2022-01-02 16:30:01.647 DEBUG 11088 --- [main] i.m.grandegita.GrandegitaApplication     : Running with Spring Boot v2.6.0, Spring v5.3.13
-2022-01-02 16:30:01.647  INFO 11088 --- [main] i.m.grandegita.GrandegitaApplication     : No active profile set, falling back to default profiles: default
-2022-01-02 16:30:03.131  INFO 11088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-01-02 16:30:03.241  INFO 11088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 3 JPA repository interfaces.
-2022-01-02 16:30:04.004  INFO 11088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
-2022-01-02 16:30:04.020  INFO 11088 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-01-02 16:30:04.020  INFO 11088 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
-2022-01-02 16:30:04.207  INFO 11088 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-01-02 16:30:04.207  INFO 11088 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2435 ms
-2022-01-02 16:30:04.489  INFO 11088 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-01-02 16:30:04.559  INFO 11088 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
-2022-01-02 16:30:04.762  INFO 11088 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-01-02 16:30:04.887  INFO 11088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-01-02 16:30:05.137  INFO 11088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-01-02 16:30:05.153  INFO 11088 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-01-02 16:30:06.099  INFO 11088 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-01-02 16:30:06.099  INFO 11088 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-01-02 16:30:06.708  WARN 11088 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-01-02 16:30:07.100  INFO 11088 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+The called method's class, liquibase.integration.spring.SpringLiquibase, is available from the following locations:
 
-Using generated security password: 847455b9-fe16-4e5b-948d-53714415feb8
+    jar:file:/C:/Users/ml89/.m2/repository/org/liquibase/liquibase-core/3.4.1/liquibase-core-3.4.1.jar!/liquibase/integration/spring/SpringLiquibase.class
 
-2022-01-02 16:30:07.257  INFO 11088 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ffcdc9b, org.springframework.security.web.context.SecurityContextPersistenceFilter@33a8f553, org.springframework.security.web.header.HeaderWriterFilter@5a9baba8, org.springframework.security.web.csrf.CsrfFilter@480994d3, org.springframework.security.web.authentication.logout.LogoutFilter@ebff59d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@90394d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6b94c200, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@47994b51, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@570127fa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7204d98f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8636cf4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19f99aaf, org.springframework.security.web.session.SessionManagementFilter@b5311cb, org.springframework.security.web.access.ExceptionTranslationFilter@26a202ae, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@78f4d15d]
-2022-01-02 16:30:07.350  INFO 11088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
-2022-01-02 16:30:07.366  INFO 11088 --- [main] i.m.grandegita.GrandegitaApplication     : Started GrandegitaApplication in 6.887 seconds (JVM running for 9.372)
-2022-01-02 16:31:53.160  INFO 17916 --- [main] i.m.grandegita.GrandegitaApplication     : Starting GrandegitaApplication using Java 11.0.11 on LAPTOP-OGKERUP4 with PID 17916 (C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita\target\classes started by ml89 in C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita)
-2022-01-02 16:31:53.176 DEBUG 17916 --- [main] i.m.grandegita.GrandegitaApplication     : Running with Spring Boot v2.6.0, Spring v5.3.13
-2022-01-02 16:31:53.176  INFO 17916 --- [main] i.m.grandegita.GrandegitaApplication     : No active profile set, falling back to default profiles: default
-2022-01-02 16:31:54.935  INFO 17916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-01-02 16:31:55.076  INFO 17916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 3 JPA repository interfaces.
-2022-01-02 16:31:55.795  INFO 17916 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
-2022-01-02 16:31:55.810  INFO 17916 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-01-02 16:31:55.810  INFO 17916 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
-2022-01-02 16:31:55.998  INFO 17916 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-01-02 16:31:55.998  INFO 17916 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2666 ms
-2022-01-02 16:31:56.279  INFO 17916 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-01-02 16:31:56.342  INFO 17916 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
-2022-01-02 16:31:56.512  INFO 17916 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-01-02 16:31:56.637  INFO 17916 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-01-02 16:31:56.903  INFO 17916 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-01-02 16:31:56.934  INFO 17916 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-01-02 16:31:57.841  INFO 17916 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-01-02 16:31:57.841  INFO 17916 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-01-02 16:31:58.403  WARN 17916 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-01-02 16:31:58.841  INFO 17916 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+The called method's class hierarchy was loaded from the following locations:
 
-Using generated security password: f01d61b8-2a3a-4fad-a5ad-6442d51cdcff
+    liquibase.integration.spring.SpringLiquibase: file:/C:/Users/ml89/.m2/repository/org/liquibase/liquibase-core/3.4.1/liquibase-core-3.4.1.jar
 
-2022-01-02 16:31:58.981  INFO 17916 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a1a72d4, org.springframework.security.web.context.SecurityContextPersistenceFilter@ebff59d, org.springframework.security.web.header.HeaderWriterFilter@240291d9, org.springframework.security.web.csrf.CsrfFilter@8636cf4, org.springframework.security.web.authentication.logout.LogoutFilter@7bd7d71c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2c1a95a2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@426913c4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@66d44581, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3ba8ef4e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ee186f3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49fb693d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1afa048a, org.springframework.security.web.session.SessionManagementFilter@50a1af86, org.springframework.security.web.access.ExceptionTranslationFilter@291028d7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6b32b678]
-2022-01-02 16:31:59.091  INFO 17916 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
-2022-01-02 16:31:59.106  INFO 17916 --- [main] i.m.grandegita.GrandegitaApplication     : Started GrandegitaApplication in 7.449 seconds (JVM running for 9.849)
-2022-01-02 16:33:42.722  INFO 19444 --- [main] i.m.grandegita.GrandegitaApplication     : Starting GrandegitaApplication using Java 11.0.11 on LAPTOP-OGKERUP4 with PID 19444 (C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita\target\classes started by ml89 in C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita)
-2022-01-02 16:33:42.769 DEBUG 19444 --- [main] i.m.grandegita.GrandegitaApplication     : Running with Spring Boot v2.6.0, Spring v5.3.13
-2022-01-02 16:33:42.769  INFO 19444 --- [main] i.m.grandegita.GrandegitaApplication     : No active profile set, falling back to default profiles: default
-2022-01-02 16:33:43.894  INFO 19444 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-01-02 16:33:44.003  INFO 19444 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108 ms. Found 3 JPA repository interfaces.
-2022-01-02 16:33:44.691  INFO 19444 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
-2022-01-02 16:33:44.707  INFO 19444 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-01-02 16:33:44.707  INFO 19444 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
-2022-01-02 16:33:44.894  INFO 19444 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-01-02 16:33:44.894  INFO 19444 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2031 ms
-2022-01-02 16:33:45.151  INFO 19444 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-01-02 16:33:45.198  INFO 19444 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
-2022-01-02 16:33:45.386  INFO 19444 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-01-02 16:33:45.495  INFO 19444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-01-02 16:33:45.714  INFO 19444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-01-02 16:33:45.729  INFO 19444 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-01-02 16:33:46.573  INFO 19444 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-01-02 16:33:46.589  INFO 19444 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-01-02 16:33:47.151  WARN 19444 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-01-02 16:33:47.573  INFO 19444 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: b1cf4c55-abc5-45de-9f15-8d03ec7fdc0e
+Action:
 
-2022-01-02 16:33:47.714  INFO 19444 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f498f21, org.springframework.security.web.context.SecurityContextPersistenceFilter@6244afc4, org.springframework.security.web.header.HeaderWriterFilter@59ec5a0b, org.springframework.security.web.csrf.CsrfFilter@550f522b, org.springframework.security.web.authentication.logout.LogoutFilter@284b487f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@44a9971f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@72240290, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@90394d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@314c28dc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f1ffc18, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a4e492c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@50caeb4b, org.springframework.security.web.session.SessionManagementFilter@f98cff, org.springframework.security.web.access.ExceptionTranslationFilter@a5d23c9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@185bf6e0]
-2022-01-02 16:33:47.823  INFO 19444 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
-2022-01-02 16:33:47.839  INFO 19444 --- [main] i.m.grandegita.GrandegitaApplication     : Started GrandegitaApplication in 6.229 seconds (JVM running for 8.338)
-2022-01-02 18:11:17.690  WARN 19444 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h27m31s685ms869µs).
-2022-01-02 18:15:37.438  INFO 15008 --- [main] i.m.grandegita.GrandegitaApplication     : Starting GrandegitaApplication using Java 11.0.11 on LAPTOP-OGKERUP4 with PID 15008 (C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita\target\classes started by ml89 in C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita)
-2022-01-02 18:15:37.447 DEBUG 15008 --- [main] i.m.grandegita.GrandegitaApplication     : Running with Spring Boot v2.6.0, Spring v5.3.13
-2022-01-02 18:15:37.448  INFO 15008 --- [main] i.m.grandegita.GrandegitaApplication     : No active profile set, falling back to default profiles: default
-2022-01-02 18:15:40.705  INFO 15008 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-01-02 18:15:40.963  INFO 15008 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 237 ms. Found 3 JPA repository interfaces.
-2022-01-02 18:15:42.719  INFO 15008 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
-2022-01-02 18:15:42.758  INFO 15008 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-01-02 18:15:42.776  INFO 15008 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
-2022-01-02 18:15:43.162  INFO 15008 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-01-02 18:15:43.162  INFO 15008 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5509 ms
-2022-01-02 18:15:43.912  INFO 15008 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-01-02 18:15:44.084  INFO 15008 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
-2022-01-02 18:15:44.459  INFO 15008 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-01-02 18:15:44.756  INFO 15008 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-01-02 18:15:45.193  INFO 15008 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-01-02 18:15:45.256  INFO 15008 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-01-02 18:15:46.512  INFO 15008 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-01-02 18:15:46.528  INFO 15008 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-01-02 18:15:47.270  WARN 15008 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-01-02 18:15:47.838  INFO 15008 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+Correct the classpath of your application so that it contains compatible versions of the classes org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration$LiquibaseConfiguration and liquibase.integration.spring.SpringLiquibase
 
-Using generated security password: d105e44c-2746-49b2-97c8-12dc7ca6bba5
+2022-04-26 23:41:38.406  INFO 19868 --- [main] i.m.grandegita.GrandegitaApplication     : Starting GrandegitaApplication using Java 11.0.11 on LAPTOP-OGKERUP4 with PID 19868 (C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita\grandegita-core\target\classes started by ml89 in C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita)
+2022-04-26 23:41:38.413 DEBUG 19868 --- [main] i.m.grandegita.GrandegitaApplication     : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-04-26 23:41:38.414  INFO 19868 --- [main] i.m.grandegita.GrandegitaApplication     : No active profile set, falling back to default profiles: default
+2022-04-26 23:41:40.347  INFO 19868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-26 23:41:40.478  INFO 19868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117 ms. Found 3 JPA repository interfaces.
+2022-04-26 23:41:41.194  INFO 19868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2022-04-26 23:41:41.209  INFO 19868 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-26 23:41:41.210  INFO 19868 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-04-26 23:41:41.397  INFO 19868 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-26 23:41:41.398  INFO 19868 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2832 ms
+2022-04-26 23:41:42.063  WARN 19868 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [liquibase.integration.spring.SpringLiquibase]: Factory method 'liquibase' threw exception; nested exception is java.lang.NoSuchMethodError: liquibase.integration.spring.SpringLiquibase.setClearCheckSums(Z)V
+2022-04-26 23:41:42.069  INFO 19868 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-04-26 23:41:42.094  INFO 19868 --- [main] ConditionEvaluationReportLoggingListener : 
 
-2022-01-02 18:15:48.010  INFO 15008 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@143fe09c, org.springframework.security.web.context.SecurityContextPersistenceFilter@4f65af91, org.springframework.security.web.header.HeaderWriterFilter@61ca5134, org.springframework.security.web.csrf.CsrfFilter@3acc65f0, org.springframework.security.web.authentication.logout.LogoutFilter@5516ee5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@a302f30, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@630c3af3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@41463c56, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5020e5ab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8ee1404, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c3924fd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@161c9468, org.springframework.security.web.session.SessionManagementFilter@8636cf4, org.springframework.security.web.access.ExceptionTranslationFilter@72240290, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@90394d]
-2022-01-02 18:15:48.120  INFO 15008 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
-2022-01-02 18:15:48.135  INFO 15008 --- [main] i.m.grandegita.GrandegitaApplication     : Started GrandegitaApplication in 12.36 seconds (JVM running for 18.913)
-2022-01-02 18:21:51.293  INFO 16404 --- [main] i.m.grandegita.GrandegitaApplication     : Starting GrandegitaApplication using Java 11.0.11 on LAPTOP-OGKERUP4 with PID 16404 (C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita\target\classes started by ml89 in C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita)
-2022-01-02 18:21:51.293 DEBUG 16404 --- [main] i.m.grandegita.GrandegitaApplication     : Running with Spring Boot v2.6.0, Spring v5.3.13
-2022-01-02 18:21:51.293  INFO 16404 --- [main] i.m.grandegita.GrandegitaApplication     : No active profile set, falling back to default profiles: default
-2022-01-02 18:21:52.721  INFO 16404 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-01-02 18:21:52.861  INFO 16404 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 130 ms. Found 3 JPA repository interfaces.
-2022-01-02 18:21:53.590  INFO 16404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
-2022-01-02 18:21:53.590  INFO 16404 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-01-02 18:21:53.590  INFO 16404 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
-2022-01-02 18:21:53.778  INFO 16404 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-01-02 18:21:53.793  INFO 16404 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2345 ms
-2022-01-02 18:21:54.075  INFO 16404 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-01-02 18:21:54.153  INFO 16404 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
-2022-01-02 18:21:54.418  INFO 16404 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-01-02 18:21:54.588  INFO 16404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-01-02 18:21:54.838  INFO 16404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-01-02 18:21:54.854  INFO 16404 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-01-02 18:21:55.771  INFO 16404 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-01-02 18:21:55.771  INFO 16404 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-01-02 18:21:56.334  WARN 16404 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-01-02 18:21:56.769  INFO 16404 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-26 23:41:42.124 ERROR 19868 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
 
-Using generated security password: d39f2a0f-dcc1-4277-99d4-3490d4b89a13
+***************************
+APPLICATION FAILED TO START
+***************************
 
-2022-01-02 18:21:56.941  INFO 16404 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@19f99aaf, org.springframework.security.web.context.SecurityContextPersistenceFilter@7204d98f, org.springframework.security.web.header.HeaderWriterFilter@b5311cb, org.springframework.security.web.csrf.CsrfFilter@a5d23c9, org.springframework.security.web.authentication.logout.LogoutFilter@6ee186f3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6fafbdac, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6a97517, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5020e5ab, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2ffcdc9b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c9512c6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f65af91, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19f1f330, org.springframework.security.web.session.SessionManagementFilter@33a8f553, org.springframework.security.web.access.ExceptionTranslationFilter@6e12f38c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@314c28dc]
-2022-01-02 18:21:57.050  INFO 16404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
-2022-01-02 18:21:57.066  INFO 16404 --- [main] i.m.grandegita.GrandegitaApplication     : Started GrandegitaApplication in 7.094 seconds (JVM running for 10.086)
-2022-01-02 18:24:15.588  INFO 19636 --- [main] i.m.grandegita.GrandegitaApplication     : Starting GrandegitaApplication using Java 11.0.11 on LAPTOP-OGKERUP4 with PID 19636 (C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita\target\classes started by ml89 in C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita)
-2022-01-02 18:24:15.604 DEBUG 19636 --- [main] i.m.grandegita.GrandegitaApplication     : Running with Spring Boot v2.6.0, Spring v5.3.13
-2022-01-02 18:24:15.604  INFO 19636 --- [main] i.m.grandegita.GrandegitaApplication     : No active profile set, falling back to default profiles: default
-2022-01-02 18:24:16.961  INFO 19636 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-01-02 18:24:17.086  INFO 19636 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124 ms. Found 4 JPA repository interfaces.
-2022-01-02 18:24:17.789  INFO 19636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
-2022-01-02 18:24:17.805  INFO 19636 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-01-02 18:24:17.805  INFO 19636 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
-2022-01-02 18:24:17.992  INFO 19636 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-01-02 18:24:17.992  INFO 19636 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2326 ms
-2022-01-02 18:24:18.336  INFO 19636 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-01-02 18:24:18.383  INFO 19636 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
-2022-01-02 18:24:18.539  INFO 19636 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-01-02 18:24:18.680  INFO 19636 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-01-02 18:24:18.945  INFO 19636 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-01-02 18:24:18.961  INFO 19636 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-01-02 18:24:19.852  WARN 19636 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
-2022-01-02 18:24:19.852  WARN 19636 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : таблица "users" не существует, пропускается
-2022-01-02 18:24:19.898  INFO 19636 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-01-02 18:24:19.914  INFO 19636 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-01-02 18:24:20.445  WARN 19636 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-01-02 18:24:20.695  INFO 19636 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67823972, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e3dc24f, org.springframework.security.web.header.HeaderWriterFilter@51dbed72, org.springframework.security.web.authentication.logout.LogoutFilter@6e23ba17, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@77f04d1a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6ba226cd, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1f1574c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ba36c83, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@612bb755, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@16c9e378, org.springframework.security.web.session.SessionManagementFilter@15fe020d, org.springframework.security.web.access.ExceptionTranslationFilter@5d75f90e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@576b385d]
-2022-01-02 18:24:21.206  INFO 19636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
-2022-01-02 18:24:21.221  INFO 19636 --- [main] i.m.grandegita.GrandegitaApplication     : Started GrandegitaApplication in 6.741 seconds (JVM running for 9.506)
-2022-01-02 18:30:36.650  INFO 19636 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-01-02 18:30:37.475  WARN 19636 --- [http-nio-8083-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [774] milliseconds.
-2022-01-02 18:32:59.949  INFO 3496 --- [main] i.m.grandegita.GrandegitaApplication     : Starting GrandegitaApplication using Java 11.0.11 on LAPTOP-OGKERUP4 with PID 3496 (C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita\target\classes started by ml89 in C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita)
-2022-01-02 18:32:59.954 DEBUG 3496 --- [main] i.m.grandegita.GrandegitaApplication     : Running with Spring Boot v2.6.0, Spring v5.3.13
-2022-01-02 18:32:59.955  INFO 3496 --- [main] i.m.grandegita.GrandegitaApplication     : No active profile set, falling back to default profiles: default
-2022-01-02 18:33:01.676  INFO 3496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-01-02 18:33:01.837  INFO 3496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 149 ms. Found 4 JPA repository interfaces.
-2022-01-02 18:33:02.505  INFO 3496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
-2022-01-02 18:33:02.521  INFO 3496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-01-02 18:33:02.521  INFO 3496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
-2022-01-02 18:33:02.719  INFO 3496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-01-02 18:33:02.719  INFO 3496 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2647 ms
-2022-01-02 18:33:03.001  INFO 3496 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-01-02 18:33:03.079  INFO 3496 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
-2022-01-02 18:33:03.282  INFO 3496 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-01-02 18:33:03.391  INFO 3496 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-01-02 18:33:03.673  INFO 3496 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-01-02 18:33:03.704  INFO 3496 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-01-02 18:33:04.860  INFO 3496 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-01-02 18:33:04.876  INFO 3496 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-01-02 18:33:05.423  WARN 3496 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-01-02 18:33:05.688  INFO 3496 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@507f7cd1, org.springframework.security.web.context.SecurityContextPersistenceFilter@36349e29, org.springframework.security.web.header.HeaderWriterFilter@4c114687, org.springframework.security.web.authentication.logout.LogoutFilter@16c9e378, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7526bb18, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@580154b3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@349996a6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5aeebccc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51da7b08, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@78aa1753, org.springframework.security.web.session.SessionManagementFilter@3f1fb139, org.springframework.security.web.access.ExceptionTranslationFilter@33b2ba25, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@18f27a81]
-2022-01-02 18:33:06.188  INFO 3496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
-2022-01-02 18:33:06.219  INFO 3496 --- [main] i.m.grandegita.GrandegitaApplication     : Started GrandegitaApplication in 7.227 seconds (JVM running for 9.435)
-2022-01-02 18:33:18.892  INFO 3496 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-01-02 18:33:19.611  WARN 3496 --- [http-nio-8083-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [669] milliseconds.
-2022-01-02 18:37:06.199  INFO 14308 --- [main] i.m.grandegita.GrandegitaApplication     : Starting GrandegitaApplication using Java 11.0.11 on LAPTOP-OGKERUP4 with PID 14308 (C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita\target\classes started by ml89 in C:\Users\ml89\OneDrive\Рабочий стол\GGita\grandegita\grandegita)
-2022-01-02 18:37:06.199 DEBUG 14308 --- [main] i.m.grandegita.GrandegitaApplication     : Running with Spring Boot v2.6.0, Spring v5.3.13
-2022-01-02 18:37:06.199  INFO 14308 --- [main] i.m.grandegita.GrandegitaApplication     : No active profile set, falling back to default profiles: default
-2022-01-02 18:37:07.580  INFO 14308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-01-02 18:37:07.739  INFO 14308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 136 ms. Found 4 JPA repository interfaces.
-2022-01-02 18:37:08.427  INFO 14308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
-2022-01-02 18:37:08.443  INFO 14308 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-01-02 18:37:08.443  INFO 14308 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
-2022-01-02 18:37:08.614  INFO 14308 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-01-02 18:37:08.614  INFO 14308 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2321 ms
-2022-01-02 18:37:08.880  INFO 14308 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-01-02 18:37:08.974  INFO 14308 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
-2022-01-02 18:37:09.177  INFO 14308 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-01-02 18:37:09.286  INFO 14308 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-01-02 18:37:09.614  INFO 14308 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-01-02 18:37:09.646  INFO 14308 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2022-01-02 18:37:10.689  INFO 14308 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-01-02 18:37:10.704  INFO 14308 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-01-02 18:37:11.312  WARN 14308 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-01-02 18:37:11.580  INFO 14308 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@507f7cd1, org.springframework.security.web.context.SecurityContextPersistenceFilter@36349e29, org.springframework.security.web.header.HeaderWriterFilter@4c114687, org.springframework.security.web.authentication.logout.LogoutFilter@16c9e378, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7526bb18, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@580154b3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@349996a6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5aeebccc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51da7b08, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@78aa1753, org.springframework.security.web.session.SessionManagementFilter@3f1fb139, org.springframework.security.web.access.ExceptionTranslationFilter@33b2ba25, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@18f27a81]
-2022-01-02 18:37:12.115  INFO 14308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
-2022-01-02 18:37:12.131  INFO 14308 --- [main] i.m.grandegita.GrandegitaApplication     : Started GrandegitaApplication in 6.94 seconds (JVM running for 9.272)
-2022-01-02 18:37:27.047  INFO 14308 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-01-02 18:39:09.971  WARN 14308 --- [http-nio-8083-exec-8] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [656] milliseconds.
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration$LiquibaseConfiguration.liquibase(LiquibaseAutoConfiguration.java:94)
+
+The following method did not exist:
+
+    liquibase.integration.spring.SpringLiquibase.setClearCheckSums(Z)V
+
+The calling method's class, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration$LiquibaseConfiguration, was loaded from the following location:
+
+    jar:file:/C:/Users/ml89/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.6.3/spring-boot-autoconfigure-2.6.3.jar!/org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class
+
+The called method's class, liquibase.integration.spring.SpringLiquibase, is available from the following locations:
+
+    jar:file:/C:/Users/ml89/.m2/repository/org/liquibase/liquibase-core/3.4.1/liquibase-core-3.4.1.jar!/liquibase/integration/spring/SpringLiquibase.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    liquibase.integration.spring.SpringLiquibase: file:/C:/Users/ml89/.m2/repository/org/liquibase/liquibase-core/3.4.1/liquibase-core-3.4.1.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration$LiquibaseConfiguration and liquibase.integration.spring.SpringLiquibase
+

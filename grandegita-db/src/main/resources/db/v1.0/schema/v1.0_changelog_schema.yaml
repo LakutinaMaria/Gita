@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: adventure_inite.sql
+      relativeToChangelogFile: true
+
+
+
