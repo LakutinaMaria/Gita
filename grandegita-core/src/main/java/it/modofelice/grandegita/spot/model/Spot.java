@@ -9,12 +9,12 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter @Setter @ToString
-@Table(name = "spot")
+@Table(name = "spot", schema = "core")
 public class Spot {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
     private String description;
-    private Long parentId;
+    private UUID parentId;
 
 }

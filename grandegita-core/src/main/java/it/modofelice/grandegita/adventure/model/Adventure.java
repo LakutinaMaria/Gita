@@ -13,6 +13,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data @Builder
+@Table(name = "adventure", schema = "core")
 public class Adventure implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

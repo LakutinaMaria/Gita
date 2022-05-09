@@ -10,6 +10,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter @Setter @ToString
+@Table(name = "explorer", schema = "core")
 public class Explorer implements Serializable {
 
     @Id

@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - include:
+      file: adventure_inite.sql
+      relativeToChangelogFile: true
+  - include:
+      file: explorer_inite.sql
+      relativeToChangelogFile: true
+  - include:
+      file: spot_inite.sql
+      relativeToChangelogFile: true
+
+
+

@@ -1,0 +1,18 @@
+version: "3.7"
+
+networks:
+  gita-networks:
+    driver: bridge
+
+services:
+  postrges:
+    image: postgres:14
+    ports:
+      - '5432:5432'
+    container_name: postgresql
+    networks:
+      - gita-networks
+    environment:
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'postgres'
+      POSTGRES_DB: 'postgres'

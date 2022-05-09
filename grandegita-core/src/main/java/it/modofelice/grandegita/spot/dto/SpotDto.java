@@ -11,5 +11,5 @@ import java.util.UUID;
 public class SpotDto {
     private UUID id;
     private String description;
-    private Long parentId;
+    private UUID parentId;
 }
