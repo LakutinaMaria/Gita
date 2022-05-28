@@ -7,7 +7,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
-@Setter @ToString
+@Setter @ToString @Builder
 public class SpotDto {
     private UUID id;
     private String description;

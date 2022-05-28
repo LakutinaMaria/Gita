@@ -9,7 +9,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter @Setter @ToString
-@Table(name = "spot")
+@Table(name = "spot") @Builder
 public class Spot {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

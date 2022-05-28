@@ -1,12 +1,10 @@
 package it.modofelice.grandegita.adventure.service;
 
 import it.modofelice.grandegita.adventure.model.Adventure;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.UUID;
 
-@Service
 public interface AdventureService {
 
     Adventure addAdventure(Adventure adventure);
